@@ -1,0 +1,67 @@
+<html>
+<title>Uji Coba Form</title>
+<SCRIPT LANGUAGE="JavaScript">
+function tambah()
+{
+a=eval(form.a.value)
+b=eval(form.b.value)
+c=a+b
+form.hasil.value = c
+}
+
+function kurang()
+{
+a=eval(form.a.value)
+b=eval(form.b.value)
+c=a-b
+form.hasil.value=c
+}
+
+function kali()
+{
+a=eval(form.a.value)
+b=eval(form.b.value)
+c=a*b
+form.hasil.value=c
+}
+
+function bagi()
+{
+a=eval(form.a.value)
+b=eval(form.b.value)
+c=a/b
+form.hasil.value = c
+}
+
+function kosong()
+{
+form.a.focus()
+form.a.value=""
+form.b.value=""
+form.hasil.value=""
+
+}
+
+</SCRIPT>
+
+<body onload=kosong()>
+
+<font size="5">KALKULATOR</font>
+<hr size="6" color="red">
+<FORM name="form">
+<pre>
+Masukkan Angka 1 <input type="text" name="a">
+Masukkan Angka 2 <input type="text" name="b">
+Hasil            <input type "text" name="hasil" disabled="true">
+</pre>
+
+<input type="button" value=" + " onClick="tambah()">
+<input type="button" value=" - " onClick="kurang()">
+<input type="button" value=" x " onClick="kali()">
+<input type="button" value=" / " onClick="bagi()">
+<input type="button" value=" Kosong " onClick="kosong()">
+
+
+
+</body>
+</html>
